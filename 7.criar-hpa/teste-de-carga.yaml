@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: teste-carga # Nome do container
-          image: saulopaiva/teste-carga:1.0 # Imagem do container (substitua conforme necessário)
+          image: saulopaiva/teste-de-carga:1.0 # Imagem do container (substitua conforme necessário)
           # image: `USUARIO_DOCKER_HUB`/teste-carga:1.0 # Imagem do container (substitua conforme necessário)
           imagePullPolicy: Always # Política para sempre buscar a imagem mais recente
 

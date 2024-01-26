@@ -1,5 +1,5 @@
 apiVersion: apps/v1 # Versão da API utilizada para o recurso
-kind: ReplicaSet # Tipo de recurso (Deployment no caso)
+kind: ReplicaSet # Tipo de recurso (ReplicaSet no caso)
 metadata:
   name: servidor-python # Nome atribuído ao recurso
   labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: servidor-python # Nome do contêiner
-          image: "saulopaiva/servidor-python:1.0" # Imagem do contêiner a ser utilizada
+          image: "saulopaiva/servidor-python:2.0" # Imagem do contêiner a ser utilizada
           # image: `USUARIO_DOCKER_HUB`/servidor-python:1.0 # Imagem do contêiner a ser utilizada
           resources:
             limits:
